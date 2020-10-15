@@ -8,21 +8,46 @@
 @{
     if(currentCount==0)
     {
-        e.live(3,3);
-        e.live(3,4);
-        e.live(3,5); 
-        e.live(2,5); 
-        e.live(1,4);  
+        u = new Data.Rabbit(3,3,e);
+        e.insert(3,3,u);
+        u = new Data.Rabbit(3,4,e);
+        e.insert(3,4,u);
+        u = new Data.Rabbit(3,5,e);
+        e.insert(3,5,u);
+        u = new Data.Rabbit(2,5,e);
+        e.insert(2,5,u);
+        u = new Data.Rabbit(1,4,e);
+        e.insert(1,4,u);
+
+        u = new Data.Carrot(11,14,e);
+        e.insert(11,14,u);
+        u = new Data.Carrot(12,14,e);
+        e.insert(12,15,u);
+        u = new Data.Carrot(13,14,e);
+        e.insert(13,14,u);
+        u = new Data.Carrot(0,0,e);
+        e.insert(0,0,u);
+
+        int count1 = e.neighbors(2,4).Count();
+        int count2 = e.neighbors(13,14).Count();
+        int count3 = e.neighbors(1,1).Count();
+
+        Console.WriteLine("Neighbor");
+        Console.WriteLine(count1);
+        Console.WriteLine(count2);
+        Console.WriteLine(count3);
     }
     
 }
+
 <table class="environment">
     @for(var i=0; i<@e.total_of_rows(); i++)
     {
         <tr>
             @for(var j=0; j<@e.total_of_cols(); j++){
-                @if(e.is_alive(i,j)) {
-                    <td class="cell alive"></td>
+                @if(e.bioUnit(i,j)!=null) {
+                    @* <td class="cell alive"></td> *@
+                    <td class="cell" style="background-color:@e.bioUnit(i,j).myColor()"></td>
                 }
                 else
                 {
@@ -33,16 +58,18 @@
         </tr>
     }
 </table>
+
 <hr>
 <button class="btn btn-primary" @onclick="IncrementCount">Next</button>
 
 @code {
     private int currentCount = 0;
-    private Data.Environment e = new Data.Environment(15,15);
+    private Data.Environment e = new Data.Environment(40, 40);
+    private Data.BioUnit u;
     private void IncrementCount()
     {
-        currentCount++;
-        e.nextConwayStep();
+        currentCount++; 
+        e.nextRabbitCarrotStep();       
     }
 }
 
