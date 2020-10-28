@@ -22,3 +22,13 @@
     table-layout: fixed;
     border-spacing: 2px;
 }
+
+.panel-group .panel-heading a:after {
+    content: '-';
+    position: absolute;
+    right: 20px;
+    top:5px;
+  }
+  .panel-group .panel-heading a.collapsed:after {
+    content: '+';
+  }

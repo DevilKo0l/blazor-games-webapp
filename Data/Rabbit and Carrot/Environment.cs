@@ -161,6 +161,14 @@ namespace blazorserver01.Data
                     this.insert(x+i, y+j, new BioUnit(x+i,y+j, this));
                 }
             }
+
+            if(pattern.Equals("pentadecathlon")){
+                for(var i=0;i<8;i++)
+                for(var j=0;j<3;j++)
+                if(!((i==1&&j==1) || (i==6 && j==1))) {
+                    this.insert(x+i, y+j, new BioUnit(x+i,y+j, this));
+                }
+            }
         }
         public void nextConwayStep() {
             int n;

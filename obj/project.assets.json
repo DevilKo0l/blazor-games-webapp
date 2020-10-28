@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DevilWalker\\desktop\\My Projects\\WSB Projects\\advanced programming\\blazorserver01\\blazorserver01.csproj",
+      "projectUniqueName": "C:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\blazorserver01.csproj",
       "projectName": "blazorserver01",
-      "projectPath": "C:\\Users\\DevilWalker\\desktop\\My Projects\\WSB Projects\\advanced programming\\blazorserver01\\blazorserver01.csproj",
+      "projectPath": "C:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\blazorserver01.csproj",
       "packagesPath": "C:\\Users\\DevilWalker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DevilWalker\\desktop\\My Projects\\WSB Projects\\advanced programming\\blazorserver01\\obj\\",
+      "outputPath": "C:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
