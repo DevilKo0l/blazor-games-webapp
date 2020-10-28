@@ -45,6 +45,138 @@
         }
       },
       {
+        "HashCode": -1126226755,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.Error",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Error"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.Error"
+        }
+      },
+      {
+        "HashCode": -1843694864,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.Error",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazorserver01.Pages.Error"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.Error",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1860679801,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.FetchData",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": 1456457493,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.FetchData",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazorserver01.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -535160095,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.Index",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -191280479,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.Index",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazorserver01.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 361219564,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.Rabbits_and_carrots_razor",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Rabbits_and_carrots_razor"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots_razor"
+        }
+      },
+      {
+        "HashCode": 275236230,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.Rabbits_and_carrots_razor",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazorserver01.Pages.Rabbits_and_carrots_razor"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots_razor",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1051160061,
         "Kind": "Components.Component",
         "Name": "blazorserver01.Shared.MainLayout",
@@ -170,138 +302,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazorserver01.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -535160095,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Index",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -191280479,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Index",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazorserver01.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1860679801,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.FetchData",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 1456457493,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.FetchData",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazorserver01.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1126226755,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Error",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Error"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Error"
-        }
-      },
-      {
-        "HashCode": -1843694864,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Error",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazorserver01.Pages.Error"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Error",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 361219564,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Rabbits_and_carrots_razor",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Rabbits_and_carrots_razor"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots_razor"
-        }
-      },
-      {
-        "HashCode": 275236230,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Rabbits_and_carrots_razor",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazorserver01.Pages.Rabbits_and_carrots_razor"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots_razor",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14688,6 +14688,11 @@
     {
       "FilePath": "c:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\Pages\\FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\Pages\\Counter.razor",
+      "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
     },
     {

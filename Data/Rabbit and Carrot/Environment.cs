@@ -14,7 +14,8 @@ namespace blazorserver01.Data
             this.cell = new BioUnit[this.rows,this.cols];
             for(var i=0; i<this.rows; i++)
             for(var j=0; j<this.cols; j++)
-                this.cell[i,j] = null;
+                //this.cell[i,j] = null;
+                this.cell[i,j] = new BioUnit();
         }
         public int total_of_rows(){
             return this.rows;
@@ -122,7 +123,7 @@ namespace blazorserver01.Data
             }
         }
 
-
+        //Game Of Live
         public bool is_alive(int i,int j) {
             if(this.rightPos(i,j))
                 return this.cell[i,j].is_alive();
@@ -131,6 +132,7 @@ namespace blazorserver01.Data
         public void live(int i,int j) {
             if(this.rightPos(i,j))
                 this.cell[i,j].live();
+                
         }
         public void die(int i,int j) {
             if(this.rightPos(i,j))
@@ -150,8 +152,6 @@ namespace blazorserver01.Data
             return c;
         }
         
-
-        /*
         public void nextConwayStep() {
             int n;
             bool[,] aux = new bool[this.rows, this.cols];
@@ -183,6 +183,6 @@ namespace blazorserver01.Data
                 }
             }
         }
-        */
+              
     }
 }

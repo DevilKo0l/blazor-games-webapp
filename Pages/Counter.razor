@@ -1,0 +1,84 @@
+@page "/counter"
+
+<h1>Rabbits and Carrots</h1>
+<p>Current count: @currentCount and current radio @theRadio</p>
+<hr>
+@{
+    @* if(currentCount==0){
+        e.live(3,3);
+        e.live(3,4);
+        e.live(3,5);
+        e.live(2,5);
+        e.live(1,4);
+    }    *@
+}
+
+<table class="environment">
+    @for(var i=0; i<@e.total_of_rows(); i++)
+    {
+        <tr>
+            @for(var j=0; j<@e.total_of_cols(); j++){
+                @if(e.is_alive(i,j)) {                   
+                    <td class="cell alive"></td>
+                }
+                else
+                {
+                    <td class="cell dead"></td>
+                }
+                
+            }
+        </tr>
+    }
+</table>
+<hr>
+<p>
+    <input type="radio" name="myradiobtn"
+            checked="@(theRadio.Equals("step"))"
+            value="step"
+            @onchange="ClickRadio"/> Step by step
+    <input type="radio" name="myradiobtn"
+            checked="@(theRadio.Equals("many"))"
+            value="many"
+            @onchange="ClickRadio"/> Several step
+</p> 
+<div style="display: @(theRadio.Equals("many")?"":"none")">
+    <h5>Cycles specification</h5>
+    Number of cycles:
+    <input @bind="cyclesPerTime" /> (internal value: @cyclesPerTime)
+    <hr>
+</div>
+<div style="display: @(theRadio.Equals("step")?"":"none")">
+    <a class="btn btn-primary">
+    Auto run
+    </a>
+    <hr>
+</div>
+<div style="display: @(theRadio.Equals("step")?"":"none")">
+    <h5>Random pattern</h5>
+    <input @bind="isCheked" type="checkbox"/> (Is the box checked: @isCheked)   
+    <hr>
+</div>
+<button class="btn btn-primary" @onclick="IncrementCount">Next</button>
+<a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">
+    Look for Patterns in wikipedia
+</a>
+@code {
+    private bool isCheked = false;
+    private int cyclesPerTime = 0;
+    private int currentCount = 0;
+    private string theRadio="";
+    private Data.Environment e = new Data.Environment(30,30);  
+    private void IncrementCount()
+    {
+        currentCount++;
+        e.nextConwayStep();         
+    }
+
+    private void ClickRadio(ChangeEventArgs args)
+    {
+        theRadio = args.Value.ToString();
+        currentCount++;
+    }
+} 
+
+
