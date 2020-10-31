@@ -14,8 +14,8 @@ namespace blazorserver01.Data
             this.cell = new BioUnit[this.rows,this.cols];
             for(var i=0; i<this.rows; i++)
             for(var j=0; j<this.cols; j++)
-                //this.cell[i,j] = null;
-                this.cell[i,j] = new BioUnit();
+                this.cell[i,j] = null;
+                //this.cell[i,j] = new BioUnit();
         }
         public int total_of_rows(){
             return this.rows;
@@ -59,12 +59,13 @@ namespace blazorserver01.Data
 
         public int surroundingNeighbors(int i, int j, String specie){
             int ans = 0;
-            List<BioUnit> surr = this.neighbors(i,j);
-            Console.WriteLine(" i  j  "+i.ToString()+"  ,  "+j.ToString());
+            List<BioUnit> surr = this.neighbors(i,j);          
+            
             foreach(object unit in surr)
             {
                 if(this.specie(unit)==specie) ans++;
             }
+            //Console.WriteLine(" i  j  "+i.ToString()+"  ,  "+j.ToString());
             return ans;
         }
 
@@ -75,7 +76,7 @@ namespace blazorserver01.Data
             return w[w.Length-1];
         }
 
-        public Rabbit fistRabbit(int i, int j) {
+        public Rabbit firstRabbit(int i, int j) {
             List<BioUnit> neis = this.neighbors(i,j);
             foreach(object unit in neis){
                 if(this.specie(unit)=="Rabbit")
@@ -97,7 +98,7 @@ namespace blazorserver01.Data
                             aux[i,j] = this.cell[i,j];
                     }
                     else{
-                        this.fistRabbit(i,j).eat();
+                        this.firstRabbit(i,j).eat();
                     }
                 }
                 else if(this.specie(this.cell[i,j])=="Rabbit")
@@ -125,7 +126,7 @@ namespace blazorserver01.Data
 
         //Game Of Live
         public bool is_alive(int i,int j) {
-            if(this.rightPos(i,j))
+            if(this.rightPos(i,j))               
                 return this.cell[i,j].is_alive();
             return false;
         }
@@ -152,17 +153,26 @@ namespace blazorserver01.Data
             return c;
         }
         
+        public void put_pattern(int x, int y, string pattern) {
+            if(pattern.Equals("pentadecathlon")){
+                for(var i=0;i<8;i++)
+                for(var j=0;j<3;j++)
+                if(!((i==1&&j==1) || (i==6 && j==1))) {
+                    this.insert(x+i, y+j, new BioUnit(x+i,y+j, this));
+                }
+            }
+        }
         public void nextConwayStep() {
             int n;
             bool[,] aux = new bool[this.rows, this.cols];
-            for(var i=0; i< this.rows; i++)
-            for(var j =0; j<this.cols;j++){
-                n = this.aliveNeighbors(i,j);
+            for(var i= 0; i < this.rows; i++)
+            for(var j = 0; j < this.cols; j++){
+                n = this.surroundingNeighbors(i,j,"BioUnit");              
                 if(n==3)
                 {
                     aux[i,j]=true;
                 }
-                else if(n==2 && this.is_alive(i,j))
+                else if(n==2 && this.cell[i,j]!=null)
                 {
                     aux[i,j]=true;
                 }
@@ -173,14 +183,12 @@ namespace blazorserver01.Data
             }
             for(var i=0; i<this.rows;i++)
             for(var j=0; j<this.cols; j++){
-                if(aux[i,j])
-                {
-                    this.live(i,j);
-                }
-                else
-                {
-                    this.die(i,j);
-                }
+                if(aux[i,j] && this.cell[i,j]==null){                
+                    this.cell[i,j] = new BioUnit(i,j,this);
+                }                
+                else if(!aux[i,j] && this.cell[i,j]!=null){                
+                    this.cell[i,j] = null;
+                }                                        
             }
         }
               

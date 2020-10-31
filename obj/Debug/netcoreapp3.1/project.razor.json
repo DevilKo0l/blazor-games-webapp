@@ -144,35 +144,35 @@
         }
       },
       {
-        "HashCode": 361219564,
+        "HashCode": -1037939749,
         "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Rabbits_and_carrots_razor",
+        "Name": "blazorserver01.Pages.Rabbits_and_carrots",
         "AssemblyName": "blazorserver01",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Rabbits_and_carrots_razor"
+            "TagName": "Rabbits_and_carrots"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots_razor"
+          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots"
         }
       },
       {
-        "HashCode": 275236230,
+        "HashCode": -1627254674,
         "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Rabbits_and_carrots_razor",
+        "Name": "blazorserver01.Pages.Rabbits_and_carrots",
         "AssemblyName": "blazorserver01",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazorserver01.Pages.Rabbits_and_carrots_razor"
+            "TagName": "blazorserver01.Pages.Rabbits_and_carrots"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots_razor",
+          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14716,13 +14716,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
+      "FilePath": "c:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\Pages\\Rabbits_and_carrots.razor",
+      "TargetPath": "Pages\\Rabbits_and_carrots.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\Pages\\Rabbits_and_carrots.razor.razor",
-      "TargetPath": "Pages\\Rabbits_and_carrots.razor.razor",
+      "FilePath": "c:\\Users\\DevilWalker\\Desktop\\My Projects\\WSB projects\\Advanced Programming\\blazorserver01\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {

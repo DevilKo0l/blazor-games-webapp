@@ -4,13 +4,9 @@
 <p>Current count: @currentCount and current radio @theRadio</p>
 <hr>
 @{
-    @* if(currentCount==0){
-        e.live(3,3);
-        e.live(3,4);
-        e.live(3,5);
-        e.live(2,5);
-        e.live(1,4);
-    }    *@
+    if(currentCount==0){
+        e.put_pattern(6,6,"pentadecathlon");        
+    }
 }
 
 <table class="environment">
@@ -18,8 +14,8 @@
     {
         <tr>
             @for(var j=0; j<@e.total_of_cols(); j++){
-                @if(e.is_alive(i,j)) {                   
-                    <td class="cell alive"></td>
+                @if(e.bioUnit(i,j)!=null) {                   
+                    <td class="cell alive"></td>                   
                 }
                 else
                 {
@@ -52,12 +48,12 @@
     Auto run
     </a>
     <hr>
-</div>
+</div> 
 <div style="display: @(theRadio.Equals("step")?"":"none")">
     <h5>Random pattern</h5>
     <input @bind="isCheked" type="checkbox"/> (Is the box checked: @isCheked)   
     <hr>
-</div>
+</div> 
 <button class="btn btn-primary" @onclick="IncrementCount">Next</button>
 <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">
     Look for Patterns in wikipedia
@@ -71,7 +67,7 @@
     private void IncrementCount()
     {
         currentCount++;
-        e.nextConwayStep();         
+        e.nextConwayStep(); 
     }
 
     private void ClickRadio(ChangeEventArgs args)

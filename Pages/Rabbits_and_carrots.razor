@@ -46,7 +46,7 @@
         <tr>
             @for(var j=0; j<@e.total_of_cols(); j++){
                 @if(e.bioUnit(i,j)!=null) {
-                    @* <td class="cell alive"></td> *@
+                    @* <td class="cell alive"></td>   *@
                     <td class="cell" style="background-color:@e.bioUnit(i,j).myColor()"></td>
                 }
                 else

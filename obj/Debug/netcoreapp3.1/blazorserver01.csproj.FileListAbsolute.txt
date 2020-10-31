@@ -43,7 +43,7 @@ C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazo
 C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\blazorserver01.dll
 C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\blazorserver01.pdb
 C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\blazorserver01.csproj.CopyComplete
-C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Rabbits_and_carrots.razor.razor.g.cs
-C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\Razor\Pages\Rabbits_and_carrots.razor.razor.g.cs
 C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
 C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
+C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Rabbits_and_carrots.razor.g.cs
+C:\Users\DevilWalker\Desktop\My Projects\WSB projects\Advanced Programming\blazorserver01\obj\Debug\netcoreapp3.1\Razor\Pages\Rabbits_and_carrots.razor.g.cs
