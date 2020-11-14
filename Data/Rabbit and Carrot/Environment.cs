@@ -162,13 +162,22 @@ namespace blazorserver01.Data
                 }
             }
 
-            if(pattern.Equals("pentadecathlon")){
-                for(var i=0;i<8;i++)
-                for(var j=0;j<3;j++)
+            if(pattern.Equals("blinker")){
+                for(var i=0;i<3;i++)
+                for(var j=0;j<1;j++)
                 if(!((i==1&&j==1) || (i==6 && j==1))) {
                     this.insert(x+i, y+j, new BioUnit(x+i,y+j, this));
                 }
             }
+            
+            if(pattern.Equals("toad")){
+                for(var i=0;i<3;i++)
+                for(var j=0;j<2;j++)
+                if(!((i==0&&j==0) || (i==2 && j==1))) {
+                    this.insert(x+j, y+i, new BioUnit(x+j,y+i, this));
+                }
+            }
+
         }
         public void nextConwayStep() {
             int n;

@@ -45,6 +45,39 @@
         }
       },
       {
+        "HashCode": -598686821,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.Counter",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -1278200360,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.Counter",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazorserver01.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1126226755,
         "Kind": "Components.Component",
         "Name": "blazorserver01.Pages.Error",
@@ -140,39 +173,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazorserver01.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1037939749,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Rabbits_and_carrots",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Rabbits_and_carrots"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots"
-        }
-      },
-      {
-        "HashCode": -1627254674,
-        "Kind": "Components.Component",
-        "Name": "blazorserver01.Pages.Rabbits_and_carrots",
-        "AssemblyName": "blazorserver01",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazorserver01.Pages.Rabbits_and_carrots"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazorserver01.Pages.Rabbits_and_carrots",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

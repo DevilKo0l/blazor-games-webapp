@@ -4,7 +4,8 @@
 <p>Current count: @currentCount and current radio @theRadio</p>
 <hr>
 @{
-    if(currentCount==0){        
+    if(currentCount==0){   
+       
     }
 }
 
@@ -41,20 +42,26 @@
 <div style="display: @(theRadio.Equals("many")?"":"none")">
     <h5>Cycles specification</h5>
     Number of cycles:
-    <input @bind="cyclesPerTime" /> (internal value: @cyclesPerTime)
-    <hr>
-    <button class="btn btn-primary">Play</button>
-    <hr>
+    <input @bind="cyclesPerTime" /> (internal value: @cyclesPerTime) 
+    <br>   
+    <button class="btn btn-primary">Play</button>    
 </div>
 
+<hr>
 
+@*Add Pattern Section*@
 <button class="btn btn-info" @onclick="c => this.isCollapsed = !this.isCollapsed" >
     @( this.isCollapsed ? "Add Pattern (+)" : "Add Pattern (-)")
 </button>
 <br>
 @if(!isCollapsed)
 { 
-    @menuList[0];
+    <input type="radio" name="myradiobtn"  value="blinker" @onchange="@(() => patternName = "blinker")">
+    <label for="blinker">Blinker</label><br>
+    <input type="radio" name="myradiobtn" value="toad" @onchange="@(() => patternName = "toad")">
+    <label for="toad">Toad</label><br>
+    <input type="radio" name="myradiobtn"  value="pentadecathlon" @onchange="@(() => patternName = "pentadecathlon")">
+    <label for="pentadecathlon">Pentadecathlon</label>
 }  
 
 <br>
@@ -66,27 +73,81 @@
 </div> 
 <br>
 <button class="btn btn-success" @onclick="AddPatern">Add</button>
+<hr>
+
+@*Add Cell Section*@
+
+<button class="btn btn-info" @onclick="c => this.isCollapsed = !this.isCollapsed" >
+    @( this.isCollapsed ? "Add Cell (+)" : "Add Cell (-)")
+</button>
+
+@if(!isCollapsed)
+{ 
+    <div>  
+
+        <textarea name="" id="" cols="6" rows="3" @bind="getTextArea">
+
+        </textarea>
+    </div>
+
+    
+}  
+<br>
+<button class="btn btn-success" @onclick="AddCell">Add</button>
+
 
 <hr>
 <button class="btn btn-primary" @onclick="IncrementCount">Next</button>
 <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">
-    Look for Patterns in wikipedia
+    Look for Patterns in wikipedi
 </a>
 
 @code {    
-    private bool isCollapsed = true;   
-    public string[] menuList = new string[]{"Add the pattern pentadecathlon "};
+    private bool isCollapsed = true; 
     private int cyclesPerTime = 0;
+    private string patternName = "";
     public int row =0;
     public int col =0;
+    public string getTextArea{get;set;} = string.Empty;
+    private int[] positionInput()
+    {
+        
+        string[] values = getTextArea.Split(new[] {',','\r','\n'}, StringSplitOptions.RemoveEmptyEntries);
+        int[] nums = new int[6];
+        int i = 0;       
+        foreach(var value in values)
+        {
+            int number;
+            bool success = int.TryParse(value,out number);
+            if(success)
+            {
+                nums[i]=number;
+                i++;                
+            }
+        }
+        
+        return nums; 
+    }
 
     private int currentCount = 0;
     private string theRadio="";
-    private Data.Environment e = new Data.Environment(30,30);      
+    private Data.Environment e = new Data.Environment(30,30);  
+     
+    private void AddCell()
+    {
+        int[] position = positionInput();
+        for(int i = 0; i<6 ; i++)
+        {
+            if(i%2==0)
+            {
+                e.insert(position[i],position[i+1], new Data.BioUnit(position[i],position[i+1], e));
+            }
+        }
+    } 
     
     private void AddPatern()
     {
-        e.put_pattern(row,col,"pentadecathlon");
+        e.put_pattern(row,col,patternName);
     }
    
     private void IncrementCount()
@@ -94,6 +155,7 @@
         currentCount++;
         e.nextConwayStep(); 
     }
+    
     private void ClickRadio(ChangeEventArgs args)
     {
         theRadio = args.Value.ToString();
