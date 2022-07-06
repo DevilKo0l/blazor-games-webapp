@@ -35,7 +35,7 @@ You need to install [.Net](https://docs.microsoft.com/en-us/dotnet/core/install/
 
 1. Clone the repo
    ```
-   git clone https://github.com/DevilKo0l/corona-tracker-webapp.git
+   git clone https://github.com/DevilKo0l/blazor-games-webapp.git
    ```
 
 2. Run the project
