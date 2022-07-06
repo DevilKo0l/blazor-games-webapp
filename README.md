@@ -29,7 +29,7 @@ The technologies I use in this project inclues:
 This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-You need to install [nodejs](https://nodejs.org/en/)
+You need to install [.Net](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60)
 
 ### Installation
 
