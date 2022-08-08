@@ -40,7 +40,7 @@ You need to install [.Net](https://docs.microsoft.com/en-us/dotnet/core/install/
 
 2. Run the project
    ```
-   
+   CTRL + F5
    ```
    Runs the app in the development mode.\
    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
